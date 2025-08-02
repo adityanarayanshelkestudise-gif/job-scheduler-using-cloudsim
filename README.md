@@ -16,7 +16,7 @@ A Java-based simulation of the **Shortest Job First (SJF)** scheduling algorithm
 ## 📦 Structure
 - `src/` – Java source files
 - `build.sh / build.bat` – Compile & run scripts
-- `README.md` – Project guide and setup
+- `readme-to-start.md` – Project guide and setup
 
 ## 📖 Credits
 Based on original work by [suyash-more](https://github.com/suyash-more), with improvements in structure, documentation, and code modernization.
