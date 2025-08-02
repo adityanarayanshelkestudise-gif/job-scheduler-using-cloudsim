@@ -1,0 +1,45 @@
+# Matrix Generation Simulation Output
+# This shows what GenerateMatrices.java would produce
+
+# Console Output:
+Starting SJF Scheduler...
+Initializing new Matrices...
+
+# Generated Files Content:
+
+## CommunicationTimeMatrix.txt (30x5 matrix):
+# Task 0: 245.67 180.23 320.45 156.78 290.12
+# Task 1: 156.89 290.34 245.67 320.45 180.23
+# Task 2: 310.56 125.89 245.67 290.34 320.45
+# Task 3: 180.23 320.45 156.89 245.67 290.34
+# Task 4: 290.34 245.67 320.45 180.23 156.89
+# ... (25 more tasks)
+
+## ExecutionTimeMatrix.txt (30x5 matrix):
+# Task 0: 320.12 150.45 200.78 380.91 220.34
+# Task 1: 200.78 380.91 320.12 150.45 220.34
+# Task 2: 450.23 220.34 320.12 380.91 150.45
+# Task 3: 150.45 320.12 380.91 220.34 200.78
+# Task 4: 380.91 220.34 150.45 320.12 200.78
+# ... (25 more tasks)
+
+## SJF Scheduling Decisions:
+# Task0 is bound with VM3 (Datacenter 1: total time = 180.23 + 150.45 = 330.68)
+# Task1 is bound with VM2 (Datacenter 0: total time = 156.89 + 200.78 = 357.67)
+# Task2 is bound with VM6 (Datacenter 4: total time = 320.45 + 150.45 = 470.90)
+# Task3 is bound with VM2 (Datacenter 0: total time = 180.23 + 150.45 = 330.68)
+# Task4 is bound with VM6 (Datacenter 4: total time = 156.89 + 200.78 = 357.67)
+# ... (25 more task assignments)
+
+## Final Results Table:
+========== OUTPUT ==========
+Cloudlet ID    STATUS    Data center ID    VM ID        Time    Start Time    Finish Time    Waiting Time
+    00        SUCCESS        01            03        330.68        00.00        330.68        00.00
+    01        SUCCESS        00            02        357.67        00.00        357.67        00.00
+    02        SUCCESS        04            06        470.90        00.00        470.90        00.00
+    03        SUCCESS        01            03        330.68        330.68        661.36        00.00
+    04        SUCCESS        04            06        357.67        470.90        828.57        00.00
+    05        SUCCESS        02            04        445.23        00.00        445.23        00.00
+    ... (24 more completed tasks)
+
+Makespan using SJF: 1247.89
